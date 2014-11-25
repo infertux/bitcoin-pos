@@ -1,0 +1,17 @@
+extends ../../../views/layout
+
+block mainContent
+  h1 Sign Up
+
+  .row
+    .col-md-4.col-md-offset-4
+      form.form-horizontal(action="/sign_up" method="post")
+        input(type="hidden", name="_csrf", value=csrftoken)
+
+        .form-group
+          label.control-label What is your BTC address?
+          input.form-control(type="text" name="btc_address")
+
+        .form-group
+          input.btn.btn-default.btn-lg(type="submit" value="Go!")
+

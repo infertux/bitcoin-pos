@@ -38,7 +38,8 @@
     "should": "~4.0.4",
     "jshint": "^2.5.x",
     "commander": "",
-    "glob": ""
+    "glob": "",
+    "node-sass": "~1.2.3"
   },
   "scripts": {
     "prepublish": "npm prune",

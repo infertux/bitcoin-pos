@@ -4,6 +4,7 @@ require('nodebootstrap-server').setup(function(runningApp) {
   //---- See: http://vimeo.com/56166857
 
   runningApp.use('/hello', require('./lib/hello')); // attach to sub-route
+  runningApp.use('/sign_up', require('./lib/sign_up')); // attach to sub-route
   runningApp.use(require('./lib/routes')); // attach to root route
 
 });

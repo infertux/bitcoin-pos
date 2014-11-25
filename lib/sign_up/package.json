@@ -1,0 +1,3 @@
+{ "name" : "Example SignUp Module"
+, "main" : "sign_up.js"
+}

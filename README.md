@@ -1,3 +1,8 @@
+`./node_modules/node-sass/bin/node-sass -w -o ./public/css/ views/style.sass`
+
+---
+
+
 ![npm version](https://img.shields.io/npm/v/nodebootstrap.svg)
 
 NodeBootstrap is a project skeleton for [Node.js](http://nodejs.org/)/[Express.js](http://expressjs.com)
