@@ -1,0 +1,20 @@
+extends ../../../views/layout
+
+block mainContent
+  h1 Point of Sale
+
+  .row
+    .col-md-2.col-md-offset-5
+      form.form-horizontal(action="#" method="post")
+        input(type="hidden", name="_csrf", value=csrftoken)
+        input(type="hidden" name="fiat_currency" value="IDR")
+        // FIXME: don't hardcode IDR
+
+        .form-group
+          .input-group
+            input.form-control(type="text" name="fiat_amount", placeholder="Amount")
+            .input-group-addon IDR
+
+        .form-group
+          input.btn.btn-primary.btn-lg(type="submit" value="Generate Invoice")
+

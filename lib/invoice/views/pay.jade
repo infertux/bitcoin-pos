@@ -1,0 +1,33 @@
+extends ../../../views/layout
+
+block mainContent
+  .row
+    .col-md-6.col-md-offset-3
+      .panel.panel-default
+        .panel-body
+          = message
+
+  .row
+    .col-md-6.col-md-offset-3
+      p
+        b Please scan QR code to send payment
+
+      p
+        img(src="/img/loader.gif")
+
+      #qrCodeData.hide= qr_code_data
+      #qrCode
+
+      script(src="/js/qrcode.js")
+      script(src="/js/jquery.qrcode.js")
+      script
+        $("#qrCode").qrcode($("#qrCodeData").text());
+
+  .row
+    .col-md-2.col-md-offset-5
+      form.form-horizontal(action="#" method="post")
+        input(type="hidden", name="_csrf", value=csrftoken)
+
+        .form-group
+          input.btn.btn-secondary(type="submit" value="Cancel Invoice")
+

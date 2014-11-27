@@ -1,0 +1,4 @@
+{ "name" : "Invoice Module"
+, "main" : "invoice.js"
+}
+

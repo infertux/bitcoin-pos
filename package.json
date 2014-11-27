@@ -28,7 +28,8 @@
     "underscore": "1.x",
     "metalogger": "*",
     "jade": "~1.7.0",
-    "sqlite3": "~3.0.4"
+    "sqlite3": "~3.0.4",
+    "request": "~2.48.0"
   },
   "devDependencies": {
     "after": "^0.8.1",
